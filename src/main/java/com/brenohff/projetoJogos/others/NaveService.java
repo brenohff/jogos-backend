@@ -21,5 +21,13 @@ public class NaveService {
 		return repository.findAll();
 	}
 	
+	public void atualizaNave(Nave nave) {
+		repository.atualizaNave(nave.getId());
+	}
+	
+	public void resetaDados() {
+		repository.resetaDados();
+	}
+	
 	
 }

@@ -20,16 +20,19 @@ public class Nave implements Serializable{
 	private Integer valor_ataque;	
 	private String link_gif;
 	private String status;
+	private boolean escolhido;
 	
-	public Nave(String nome, Integer valor_vida, Integer valor_ataque, String link_gif, String status) {
+	public Nave(String nome, Integer valor_vida, Integer valor_ataque, String link_gif, String status,
+			boolean escolhido) {
 		super();
 		this.nome = nome;
 		this.valor_vida = valor_vida;
 		this.valor_ataque = valor_ataque;
 		this.link_gif = link_gif;
 		this.status = status;
+		this.escolhido = escolhido;
 	}
-	
+
 	public Nave() {}
 	
 	public String getNome() {
@@ -73,5 +76,14 @@ public class Nave implements Serializable{
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public boolean isEscolhido() {
+		return escolhido;
+	}
+
+	public void setEscolhido(boolean escolhido) {
+		this.escolhido = escolhido;
 	}	
+		
 }

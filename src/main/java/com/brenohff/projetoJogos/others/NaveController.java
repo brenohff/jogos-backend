@@ -19,4 +19,9 @@ public class NaveController {
 		return service.buscaNaves();
 	}
 	
+	@RequestMapping(value = "/reseta")
+	public void resetaDados(){
+		service.resetaDados();;
+	}
+	
 }
