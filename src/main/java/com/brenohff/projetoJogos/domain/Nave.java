@@ -19,13 +19,15 @@ public class Nave implements Serializable{
 	private Integer valor_vida;
 	private Integer valor_ataque;	
 	private String link_gif;
+	private String status;
 	
-	public Nave(String nome, Integer valor_vida, Integer valor_ataque, String link_gif) {
+	public Nave(String nome, Integer valor_vida, Integer valor_ataque, String link_gif, String status) {
 		super();
 		this.nome = nome;
 		this.valor_vida = valor_vida;
 		this.valor_ataque = valor_ataque;
 		this.link_gif = link_gif;
+		this.status = status;
 	}
 	
 	public Nave() {}
@@ -64,5 +66,12 @@ public class Nave implements Serializable{
 	public void setLink_gif(String link_gif) {
 		this.link_gif = link_gif;
 	}
-	
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}	
 }
