@@ -28,6 +28,7 @@ public class SocketController {
 	@MessageMapping("/event/{eventId}/naveEscolhida")
 	@SendTo("/topic/event/{eventId}")
 	public Nave naveEscolhida(@DestinationVariable String eventId, @Payload Nave nave) {
+		nave.setEscolhido(true);
 		service.atualizaNave(nave);
 		return nave;
 	}
