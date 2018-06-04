@@ -18,7 +18,7 @@ public interface NaveRepository extends JpaRepository<Nave, Long> {
 
 	@Transactional
 	@Modifying
-	@Query("UPDATE Nave n SET n.escolhido = false")
+	@Query("UPDATE Nave n SET n.escolhido = false, n.valor_vida = 1200, n.valor_ataque = 200")
 	public void resetaDados();
 
 }
