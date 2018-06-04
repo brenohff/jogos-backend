@@ -27,23 +27,43 @@ public class ProjetoJogosApplication implements CommandLineRunner{
 		List<Nave> naves = new ArrayList<>();
 		
 		Nave nave = new Nave();
-		nave.setNome("Caça intergaláctico");
+		nave.setNome("Innuendo");
 		nave.setLink_gif("http://gameznet.com.au//aliens/animated/ufo//spaceship.gif");
 		naves.add(nave);
 		
 		nave = new Nave();
-		nave.setNome("Bombardeiro militar");
+		nave.setNome("Burninator");
 		nave.setLink_gif("https://media.giphy.com/media/Xlj086SIFAqty/source.gif");
 		naves.add(nave);
 		
 		nave = new Nave();
-		nave.setNome("Caça estelar");
+		nave.setNome("Vengeance");
 		nave.setLink_gif("https://denniscooperblog.com/wp-content/uploads/2017/02/1436930896937.gif");
 		naves.add(nave);
 		
 		nave = new Nave();
-		nave.setNome("Nave supersônica");
+		nave.setNome("Agememnon");
 		nave.setLink_gif("https://cdn.wcnews.com/newestshots/full/klavs_models315.gif");
+		naves.add(nave);
+		
+		nave = new Nave();
+		nave.setNome("Dark Phoenix");
+		nave.setLink_gif("https://media.giphy.com/media/o0aao3ygIJMoo/source.gif");
+		naves.add(nave);
+		
+		nave = new Nave();
+		nave.setNome("Annihilator");
+		nave.setLink_gif("http://bestanimations.com/Sci-Fi/Spaceships/spaceship-starship-animated-gif-19.gif");
+		naves.add(nave);
+		
+		nave = new Nave();
+		nave.setNome("Sagittarius");
+		nave.setLink_gif("https://media.giphy.com/media/vJSowWKYv9qVy/source.gif");
+		naves.add(nave);
+		
+		nave = new Nave();
+		nave.setNome("Excursionist");
+		nave.setLink_gif("https://orig00.deviantart.net/9485/f/2014/126/9/9/c4d_spaceship___satellite_gif_animation_by_maximilianyuen-d7hdhvt.gif");
 		naves.add(nave);
 		
 		for(Nave spaceship : naves) {
