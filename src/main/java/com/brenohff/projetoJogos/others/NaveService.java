@@ -29,5 +29,9 @@ public class NaveService {
 		repository.resetaDados();
 	}
 	
+	public void update(Nave nave) {
+		repository.save(nave);
+	}
+	
 	
 }
